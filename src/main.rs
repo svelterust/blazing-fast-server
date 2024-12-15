@@ -10,7 +10,6 @@ async fn main() -> Result<()> {
     Ok(axum::serve(listener, app).await?)
 }
 
-// User route
 #[derive(Deserialize)]
 struct CreateUser {
     username: String,

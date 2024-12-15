@@ -24,6 +24,6 @@ impl IntoResponse for Error {
     }
 }
 
-// Imports
+// Exports
 pub use anyhow::anyhow as error;
 pub type Result<T> = anyhow::Result<T, Error>;
